@@ -1,7 +1,7 @@
 # Site settings
-title: Yo! This is Narella's blog
+title:"Yo! This is Narella blog"
 email: zhangnanmei@126.com
-description: personal blog
+description: "personal blog"
 baseurl: "" 
 url: "http://narellazhang.github.io" # the base hostname & protocol for your site
 
