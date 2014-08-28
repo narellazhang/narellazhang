@@ -1,8 +1,77 @@
 .wrap{
-	background: url(./../images/bg.jpg);
+	background: url(./../images/bg.jpg) repeat-x;
 	width: 100%;
 	height: 100%;
 }
+.page{
+	background: url(./../images/main.jpg) no-repeat;
+	width: 1002px;
+	height: 800px;
+	margin: 0 auto;
+}
+.nav{
+	position: absolute;
+	top: 120px;
+	left: 900px;
+}
+.icon{
+	float: left;
+	background: url(./../images/icon.png);
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+.home{
+	background-position: -0px -52px;  
+}
+.home:hover{
+	background-position: -312px -0px;
+}
+.contact{
+	background-position: -208px -0px;
+}
+.contact:hover{
+	background-position: -104px -0px;
+}
+.music{
+	background-position: -260px -0px;
+}
+.music:hover{
+	background-position: -0px -0px;
+}
+.note{
+	background-position: -156px -0px;
+}
+.note:hover{
+	background-position: -52px -0px;
+}
+
+.github{
+	background-position: -52px -52px; 
+	width: 165px;
+	height: 96px;
+	position: absolute;
+	top: 650px;
+	left: 900px;
+}
+.github:hover{
+	background-position: -219px -52px;
+}
+
+.main{
+	width: 875px;
+	height: 390px;
+	
+	position: relative;
+	top: 190px;
+	left: 75px;
+	
+}
 .content{
-	height: 500px;
+	width: 750px;
+	height: 250px;
+	background: url(./../images/content.jpg);
+	position: absolute;
+	top: 60px;
+	left: 55px;
 }
