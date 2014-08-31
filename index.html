@@ -29,13 +29,48 @@
         </ul>
     </div>
     <div class="main">
-      <div class="content"></div>
-      <div class="description"></div>
+      <div class="content">
+		<div id="slides">
+           
+                    <img src="images/pic_keyboard.jpg" alt="键盘">
+                
+                    <img src="images/pic_watch.jpg" alt="手表">
+               
+                    <img src="images/box_01.jpg" alt="纸盒人">
+               
+                    <img src="images/box_02.jpg" alt="纸盒人">
+               
+                    <img src="images/box_03.jpg" alt="纸盒人">
+              
+        </div>
+	  </div>
+      <div class="description">
+	  </div>
+	   </div>
     </div>
 
-    <div class="icon github"></div>
+    <div class="github">
+      <a href="#" class="myButton">view in github</a>
+    </div>
    </div>
-    
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+     <script src="scripts/jquery.slides.min.js"></script>
+      <script src="scripts/page.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 750,
+        height: 250,
+        play: {
+          active: true,
+          auto: true,
+          interval: 2000,
+          swap: true
+        }
+      });
+    });
+  </script>
+ 
 
 
   </body>
