@@ -1,9 +1,19 @@
+
+
 .music_page{
 	background: url(./../images/bg_sub.jpg) no-repeat;
 	width: 1002px;
 	height: 800px;
 	margin: 0 auto;
 }
+
+/*music*/
+.container{
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
 
 .left {
   float: left;

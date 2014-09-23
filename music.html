@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/base.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/page.css">
      <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/music.css">
+     <script type="text/javascript" src="scripts/modernizr.custom.09207.js"></script>
 
 
     <title>Narellazhang.github.io</title>
@@ -19,25 +20,27 @@
 
 
   <div class="wrap">
+
     <div class="music_page">
+      <div class="title"><h1>music</h1></div>
       <div class="nav">
         <ul>
-          <li class="icon home"></li>
-          <li class="icon note"></li>
-          <li class="icon music"></li>
-          <li class="icon contact"></li>
+          <li class="icon home"><a href="index.html" title="首页">首页</a></li>
+          <li class="icon note"><a href="note.html" title="练习">练习</a></li>
+          <li class="icon music_active"><a href="#" title="音乐">音乐</a></li>
+          <li class="icon contact"><a href="contact.html" title="联系方式">联系方式</a></li>
         </ul>
       </div>
-      <div class="main">
+      <div class="container">
         <div id="player">
-        <div class="cover"></div>
+          <div class="cover"></div>
         <div class="ctrl">
-        <div class="tag">
+          <div class="tag">
           <strong>Title</strong>
           <span class="artist">Artist</span>
           <span class="album">Album</span>
-        </div>
-        <div class="control">
+          </div>
+          <div class="control">
           <div class="left">
             <div class="rewind icon"></div>
             <div class="playback icon"></div>
@@ -49,8 +52,8 @@
               <div class="pace"></div>
             </div>
           </div>
-        </div>
-        <div class="progress">
+          </div>
+          <div class="progress">
           <div class="slider">
             <div class="loaded"></div>
             <div class="pace"></div>
