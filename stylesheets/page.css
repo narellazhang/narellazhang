@@ -106,9 +106,10 @@ li.note_active{
 
 .content{
 	width: 750px;
-	position: absolute;
-	top: 250px;
-	left: 315px;
+  margin: 0 auto;
+	position: relative;
+	top: 209px;
+	left: 15px;
 }
 .description{
   height: 35px;
