@@ -1,10 +1,8 @@
-
-
 .music_page{
-	background: url(./../images/bg_sub.jpg) no-repeat;
-	width: 1002px;
-	height: 800px;
-	margin: 0 auto;
+  background: url(./../images/bg_sub.jpg) no-repeat;
+  width: 1002px;
+  height: 800px;
+  margin: 0 auto;
 }
 
 /*music*/
@@ -70,7 +68,7 @@
   line-height: 16px;
 }
 #player .ctrl .tag strong, #player .ctrl .tag span {
-	color: #eee;
+  color: #eee;
   display: block;
   text-overflow: ellipsis;
 }

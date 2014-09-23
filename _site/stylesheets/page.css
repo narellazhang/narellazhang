@@ -4,12 +4,19 @@
 	height: 100%;
 }
 .page{
-	background: url(./../images/main.jpg) no-repeat;
+	background: url(./../images/grey++.png) no-repeat 40px 160px;
 	width: 1002px;
 	height: 800px;
 	margin: 0 auto;
 }
-
+.logo{
+  background: url(./../images/icon.png) -0px -50px;
+  width: 128px;
+   height: 42px;
+   position: absolute;
+  top: 40px;
+  left: 250px;
+}
 .title h1{
   font-size: 36px;
   position: relative;
@@ -111,17 +118,7 @@ li.note_active{
 	top: 209px;
 	left: 15px;
 }
-.description{
-  height: 35px;
-  position: relative;
-  top:-25px;
-  overflow: hidden;
-}
-.description p{
-  padding-left: 100px;
-  line-height: 35px;
-  color: #fcd0ab;
-}
+
 .myButton {
 	-moz-box-shadow:inset 0px 1px 3px 0px #515457;
 	-webkit-box-shadow:inset 0px 1px 3px 0px #515457;
@@ -193,6 +190,7 @@ li.note_active{
     position:relative;
     height:32px;
     margin-top:5px;
+    /*background: #130604;*/
   }
       
   .pager ul li{
