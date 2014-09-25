@@ -208,7 +208,7 @@ height:162px;
 
 } 
 #photo{
-background-image:url(../images/person_login.png);
+background-image:url(../images/touxiang.jpg);
 width:160px;
 height:220px;
 position:relative;
@@ -245,7 +245,7 @@ border:none;
 position:relative;
 top:50px;
 }
-#submit:hover{
+.submit:hover{
 background:url(../images/login.png) no-repeat 0 -50px;
 }
 
