@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head id="_ctl0_Head1">
+	<title>
+	仓库/共享产品
+	</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome=1">
+<!--[if lt IE 10]>
+	<script src="assets/vendor/html5shiv/3.6/html5.js?t=20121019" ></script>
+
+	<link href="assets/vendor/html5shiv/3.6/html5.css?t=1861273560" type="text/css" rel="stylesheet" />
+
+<![endif]-->
+
+
+
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+
+ 
+ 
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+
+   <style>
+.breadcrumb{
+	width: 100%;
+	line-height: 40px;
+}
+.crumb-float{
+	float:right;
+	margin-right:10px; 
+}
+
+.crumb-float i{
+	margin-left:10px;
+}
+
+.crumb-clear{
+	clear:both;
+}
+
+#err_remark_message{
+	color: red;
+	display:none;
+	margin-top:5px;
+}
+
+#err_remark_message em{
+	margin-right: 5px;
+	font-weight: bolder;
+}
+.grey{
+	color: grey;
+}
+
+   </style>   
+</head>
+<body>  
+    <div class="breadcrumb newcrumb"  title="双击最大化/还原大小">
+        <span id="_ctl0_Breadcrumb_SiteMapPath1">
+        	<a href="#"><img alt="跳过导航链接" src="" width="0" height="0" style="border-width:0px;" /></a>
+        	<span><a title="首页描述" href="/Client/Home/Home.aspx">首页</a></span>
+        	<span class="grey"> &gt; 仓库</span>
+        	<span class="grey"> &gt; 共享库存</span>
+        	<a id="_ctl0_Breadcrumb_SiteMapPath1_SkipLink"></a>
+        </span>
+        <span class="crumb-float">
+            
+            <i id="btnBack" onclick="location.href='http://pre-release.chukou1.cn/Client/Index.aspx'" title="返回上一页面" class="icon-arrow-left"></i>
+            
+            <i onclick="document.location.reload()" title="刷新页面" class="icon-refresh"></i>
+            <a  id="btnOpenIframe" style="display:none" href="http://pre-release.chukou1.cn/Client/Product/ShareList.aspx" title="在新Tab中打开" target="_blank"><i class="icon-chevron-up"></i></a>
+            <i id="btnFullSize" title="最大化界面" class="icon-resize-full"></i>
+            <i id="btnSmallSize" title="恢复原始大小" class="icon-resize-small" style="display:none"></i>
+        </span>
+    </div>
+        <div class="crumb-clear"></div>
+     
+
+     
+    
+    <div class="content">
+    <form name="form1"  id="form1" class="form-search form-inline">
+       
+        <div class="row">
+          	<div class="span5">
+	            <label for="Warehouse">仓库：</label>
+	            
+	              <select class="input-medium" id="Warehouse">
+	              <option value="">全部</option>
+	              <option value="288">白云仓库</option>
+	              <option value="289">广州仓库</option>
+	              <option value="343">旧金山仓库</option>
+	              <option value="347">澳大利亚仓库</option>
+	              <option value="348">香港仓库</option>
+	              <option value="380">英国仓库</option>
+	              <option value="554">曼城仓库</option>
+	              <option value="572">德国仓库</option>
+	              <option value="573">新泽西仓库</option>
+	              <option value="602">洛杉矶仓库</option>
+	              <option value="603">西班牙仓库</option>
+	              <option value="604">加拿大仓库</option>
+	              <option value="605">俄罗斯仓库</option>
+	              </select>
+	            
+            </div>
+          <div class="span5">
+              <label  for="StockCode">库存编码：</label>
+              
+                  <input class="input-medium" id="StockCode" name="StockCode" type="text" value=""  />
+              
+          </div>
+          <div class="span5">
+              <label for="SKU">SKU：</label>
+             
+                  <input class="input-medium" id="SKU" name="SKU" type="text" value=""  />
+              
+          </div>
+      	</div>
+      	<div class="row">
+          <div class="span5">
+             <label  for="AvailableCount">可用数量>=</label>
+            
+              <input type="text" name="Count" class="input-mini" value="">
+             
+          </div>
+          <div class="span5">
+             <label  for="Count1">价格：</label>
+            
+             <input type="text" name="Count" class="input-mini" value=""> - <input type="text" name="Count" class="input-mini" value="">
+             
+          </div>
+         <div class="span5">
+         	<div class="offset-label">
+          		<input type="submit" value="查询" class="btn btn-primary submit">
+         	 </div> 
+         </div>
+          </div>      
+        
+    </form>
+
+	
+
+
+
+	<div class="table-toolbar clearfix">
+	                    
+	                    <div class="sub-actions">
+	                       
+	                        <a href="#">导出库存数据</a>
+	                       
+	                    </div>
+	</div>
+	<table class="table table-striped table-bordered J_Search" id="table1">
+       
+		<thead>
+		<tr>
+			<th>
+				<input id="ckbSelectAll" type="checkbox" class="J_SelectAll" data-row-name="PID" />
+			</th>
+			
+			<th >仓库</th>
+		      <th> 库存编码</th>
+		      <th> SKU </th>
+		      <th>产品规格</th>
+		     
+		      <th> 可用数量 </th>
+		      <th> 价格 </th>
+      
+			<th> 共享者 </th>
+		</tr>
+		</thead>	
+		
+		<tr>
+			<td>
+				<input type="checkbox" class="J_SelItem" name="PID" value="19873" />
+			</td>
+
+			<td>
+				共享
+			</td>
+
+			<td>
+				<a href="" target="_blank" title="查看更多产品介绍">
+					testProduct0521</a>
+			</td>
+
+			<td> LRMP00000002</td>
+
+			  <td> <span>重量：500g</span><br />
+       		 <span>包装规格：10*10*10 cm</span> 
+      		</td>
+
+			<td> 100 </td>
+
+			<td>  12.00</td>
+			<td> RMP </td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" class="J_SelItem" name="PID" value="19873" />
+			</td>
+
+			<td>
+				共享
+			</td>
+
+			<td>
+				<a href="" target="_blank" title="查看更多产品介绍">
+					testProduct0521</a>
+			</td>
+
+			<td> LRMP00000002</td>
+
+			  <td> <span>重量：500g</span><br />
+       		 <span>包装规格：10*10*10 cm</span> 
+      		</td>
+
+			<td> 100 </td>
+
+			<td>  12.00</td>
+			<td> RMP </td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" class="J_SelItem" name="PID" value="19873" />
+			</td>
+
+			<td>
+				共享
+			</td>
+
+			<td>
+				<a href="" target="_blank" title="查看更多产品介绍">
+					testProduct0521</a>
+			</td>
+
+			<td> LRMP00000002</td>
+
+			  <td> <span>重量：500g</span><br />
+       		 <span>包装规格：10*10*10 cm</span> 
+      		</td>
+
+			<td> 100 </td>
+
+			<td>  12.00</td>
+			<td> RMP </td>
+		</tr>    
+	</table>
+
+		<div class="pagination pagination-right">
+		<ul id="Pager1" class="K2046_Pager">
+			<li class="disabled"><a>首页</a></li>
+			<li class="disabled"><a><<</a></li>
+			<li class="active"><a>1</a></li>
+			<li><a href="?Page=2&psize=15">2</a></li>
+			<li><a href="?Page=3&psize=15">3</a></li>
+
+			<li><a href="?Page=4&psize=15">4</a></li>
+			<li><a href="?Page=5&psize=15">5</a></li>
+			<li><a href="?Page=6&psize=15">...</a></li>
+			<li><a href="?Page=2&psize=15">>></a></li>
+			<li><a href="?Page=152&psize=15">尾页</a></li>
+		</ul>
+		</div>
+	
+
+    </div>
+
+    
+
+</body>
+</html>

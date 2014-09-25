@@ -3,12 +3,20 @@
 	width: 100%;
 	height: 100%;
 }
-.page{
+.home_page{
 	background: url(./../images/grey++.png) no-repeat 40px 160px;
 	width: 1002px;
-	height: 800px;
+	height: 736px;
 	margin: 0 auto;
+
 }
+.sub_page{
+  background: url(./../images/grey_sub.png) no-repeat 40px 160px;
+  width: 1002px;
+  height: 800px;
+  margin: 0 auto;
+}
+
 .logo{
   background: url(./../images/icon.png) -0px -50px;
   width: 128px;
@@ -100,14 +108,6 @@ li.note_active{
 }
 
 
-.github{
-	background-position: -52px -52px; 
-	width: 165px;
-	height: 96px;
-	position: absolute;
-	top: 650px;
-	left: 900px;
-}
 
 
 
@@ -119,53 +119,21 @@ li.note_active{
 	left: 15px;
 }
 
-.myButton {
-	-moz-box-shadow:inset 0px 1px 3px 0px #515457;
-	-webkit-box-shadow:inset 0px 1px 3px 0px #515457;
-	box-shadow:inset 0px 1px 3px 0px #515457;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0e0f10), color-stop(1, #393c3f));
-	background:-moz-linear-gradient(top, #0e0f10 5%, #393c3f 100%);
-	background:-webkit-linear-gradient(top, #0e0f10 5%, #393c3f 100%);
-	background:-o-linear-gradient(top, #0e0f10 5%, #393c3f 100%);
-	background:-ms-linear-gradient(top, #0e0f10 5%, #393c3f 100%);
-	background:linear-gradient(to bottom, #0e0f10 5%, #393c3f 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e0f10', endColorstr='#393c3f',GradientType=0);
-	background-color:#0e0f10;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	border:1px solid #566963;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px 5px 0px #515457;
+.container{
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
 }
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #393c3f), color-stop(1, #0e0f10));
-	background:-moz-linear-gradient(top, #393c3f 5%, #0e0f10 100%);
-	background:-webkit-linear-gradient(top, #393c3f 5%, #0e0f10 100%);
-	background:-o-linear-gradient(top, #393c3f 5%, #0e0f10 100%);
-	background:-ms-linear-gradient(top, #393c3f 5%, #0e0f10 100%);
-	background:linear-gradient(to bottom, #393c3f 5%, #0e0f10 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#393c3f', endColorstr='#0e0f10',GradientType=0);
-	background-color:#393c3f;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
+
+
+
 
 
 /*轮播*/
   .imgbox ul{
     list-style-type:none;
     margin:0px;
-    padding:0px;
+    padding-left:6px;
   }
   .imgbox ul li{
     display:none;

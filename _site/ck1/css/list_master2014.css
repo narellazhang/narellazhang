@@ -1,0 +1,402 @@
+/* 覆盖bootstrap {{{*/
+body{ padding: 0 10px 10px 5px; }
+
+.main{
+	padding-top: 10px;
+}
+
+.table th{ background-color: #EDEDED; }
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th { background-color: transparent; }
+
+.table-striped tbody tr:nth-child(even) td,
+.table-striped tbody tr:nth-child(even) th { background-color: #F9F9F9; }
+
+/* 有的列头列宽不够，文字换行导致列头高度被撑开，引起列宽足够的文字在单元格的下方 */
+.table thead th {vertical-align: top;}
+
+.table th, .table td {
+	text-align: center;
+}
+
+.table-operation-bar {
+	background: #EDEDED;
+	text-align: left !important;
+	padding: 8px 10px;
+	border: 1px solid #ddd;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom: none;
+}
+
+.table-operation-bar +.table-bordered{
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	border-top-left-radius: 0;
+
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	border-top-right-radius: 0;
+}
+
+.table-operation-bar +.table-bordered thead:first-child tr:first-child th:first-child, 
+.table-operation-bar +.table-bordered tbody:first-child tr:first-child td:first-child {
+   -webkit-border-top-left-radius: 0;
+   border-top-left-radius: 0;
+   -moz-border-radius-topleft: 0;
+}
+
+.table-operation-bar +.table-bordered thead:first-child tr:first-child th:last-child, 
+.table-operation-bar +.table-bordered tbody:first-child tr:first-child td:last-child {
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+}
+
+.table-operation-bar +.table-bordered caption+thead tr:first-child th:first-child, 
+.table-operation-bar +.table-bordered caption+tbody tr:first-child td:first-child, 
+.table-operation-bar +.table-bordered colgroup+thead tr:first-child th:first-child, 
+.table-operation-bar +.table-bordered colgroup+tbody tr:first-child td:first-child{
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+}
+
+.table-operation-bar +.table-bordered caption+thead tr:last-child th:last-child, 
+.table-operation-bar +.table-bordered caption+tbody tr:last-child td:last-child, 
+.table-operation-bar +.table-bordered colgroup+thead tr:last-child th:last-child, 
+.table-operation-bar +.table-bordered colgroup+tbody tr:last-child td:last-child{
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+}
+
+.breadcrumb{ 
+	margin-top: 10px;
+	margin-bottom: 15px; 
+	background-color: transparent;
+	padding: 0 0 5px 0;
+	border: none;
+}
+
+.breadcrumb span { color: #999; }
+
+label.error {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+
+form {margin-top: 10px;}
+
+table{ 
+	border: solid 1px #d7d7d7; 
+	border-left: none;
+	border-right: none;
+}
+
+td { font-family: monospace; }
+
+.table td, .table th{
+	font-size: 12px;
+	padding: 4px;
+}
+
+table a:visited, table a.visited{
+	color: purple;
+}
+
+table a.btn:visited{color: white !important; }
+
+
+.modal-header { 
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.modal-body { padding:10px; }
+
+.modal-footer { padding:10px 15px 10px; }
+
+/*}}}*/
+
+.datepicker table{border: none;}
+
+.content{
+	border: 1px solid #d7d7d7;
+	border-radius: 5px 5px 5px 5px;
+	padding: 10px;
+	position: relative;
+}
+
+.pop-bd .content{
+	border: none;
+}
+
+.crumbs{
+	background-color: #EDEDED;
+	margin-bottom: 10px;
+    background: #EDEDED url("http://pic.chukou1.com/0/0_4cc050.png") no-repeat 40px 0;
+	height: 33px;
+	line-height: 33px;
+	border: 1px solid #d7d7d7;
+	border-radius: 5px 5px 5px 5px;
+	padding-left: 10px;
+}
+
+.crumbs .home {
+	display: inline-block;
+    background: #EDEDED url("http://pic.chukou1.com/0/0_1a067d.png") no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+	vertical-align: middle;
+	margin-right: 25px;
+}
+
+form em{color: red; }
+
+.help-inline em {
+	color: red;
+	margin-right: 5px;
+	font-weight: bolder;
+}
+
+/*.form-search{margin: 10px; }*/
+
+.form-search select, .form-search input{ margin-right: 5px; }
+
+.form-search .btn-primary {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.nav-tabs { margin-bottom: 0; }
+
+.nav-sub, .nav-listpage{
+	margin: 0 10px 10px;
+}
+
+/* 列表页右上工具条 */
+.nav-listpage{
+	position: relative;
+	float: right;
+}
+
+/* 编辑页右上工具条 */
+.nav-editpage{
+    top: -35px; 
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+footer { 
+	min-height: 40px;
+	overflow: hidden;
+}
+
+footer .pagination-right{
+	float: right;
+}
+
+footer .pagination{
+	margin: 0;
+}
+
+footer .toolbar-table { 
+	min-height: 1px; 
+	float: left;
+}
+
+/* 信息面板 */
+.panel {
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.panel-hd{
+	padding: 0 10px;
+	background-color: #EEEEEE;
+	background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #ccc;
+	border-radius: 5px 5px 0 0;
+}
+
+.panel-hd h3{
+	margin: 0;
+	line-height: 35px;
+}
+
+.panel-ft{
+    padding: 5px 20px; 
+    text-align: right; 
+}
+
+h3{ font-size: 16px }
+h4{ font-size: 14px }
+
+.panel-bd{ padding: 15px; }
+
+
+
+.clear-border {border-right: none !important; }
+
+/* 表格列多时，给table加上这个容器 */
+.wrap-scroll {
+	width:auto;
+	overflow:auto;
+	/*margin: 0 5px;*/
+}
+
+.wrap-scroll .table { margin-bottom: 0; }
+
+header{
+	display: block; 
+	min-height: 30px;
+}
+
+input.J_SelectAll {display: inline !important;}
+
+.input-keyword { padding-right: 20px !important;}
+
+/*表格的状态图例 */
+.state-legend span{
+	width: 15px;
+	margin-right:3px; 
+}
+
+.state-legend .color-block{
+	display: inline-block;
+	width: 12px;
+	height: 15px;
+}
+
+td.td-hignlight{
+	background-color: #FFF280 !important;
+	color: red;
+}
+
+td em { 
+	color: red;
+	font-style: normal;
+}
+
+/*.table th:first-child,*/
+/*.table tr td:first-child{ text-align: center; }*/
+
+.table tfoot tr td:first-child{ text-align: left; }
+
+/*分页组件*/
+.pagination .select-size { 
+	height: 38px;
+	line-height: 36px;
+	padding: 0 15px 0 10px;  
+	border: solid 1px #DDD;
+	border-left: none;
+	border-radius: 0 4px 4px 0;
+	display: inline-block;
+}
+
+.pagination select{
+	margin: 0 5px 3px;
+	width: 60px;
+}
+
+.pagination strong{
+	font-size: 17px;
+	margin: 0 5px;
+	font-weight: normal;
+}
+
+
+/*面包屑右侧工具条*/
+.breadcrumb .toolbar-page{float:right; }
+
+.breadcrumb i{
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+/*限制表格备注列的最大宽度*/
+.limit-remark{
+	max-width:180px;
+	max-height: 60px;
+	width: 100%;
+	margin:0 auto;
+	padding:0 0;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+/*表格列文字左居中*/
+.table tr td.align-left { text-align: left; }
+.table tr td.align-left:first-child { text-align: left; }
+
+
+.table-headbar{
+	height: 34px;
+	line-height: 34px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.table-headbar .nav-pills label{
+	margin-top: 8px;
+	padding: 0 12px;
+}
+
+.table-headbar .operation{
+	float:left;
+	padding-left: 8px;
+}
+
+/*限制表格备注列的最大宽度*/
+.limit-content{
+	max-height: 60px; /*3行*/
+	width: 12em;
+	margin:0 auto;
+	padding:0 0;
+	overflow:hidden;
+	text-align: left;
+	text-overflow:ellipsis;
+}
+
+.limit{text-align: left; }
+
+.alert-lite{
+	position: absolute;
+	left: 30%;
+	top: 10px;
+	min-width: 300px;
+}
+
+
+/* ===面包屑bar=== */
+.breadcrumb-bar{
+	margin-bottom: 20px;
+}
+.breadcrumb{ 
+	background: transparent;
+	padding: 0;
+	border: none;
+}
+/* 和面包屑同一行，界面操作如：如刷新，回退，在新Tab中打开... */
+.page-nav-btns{
+	float: right; 
+	margin-top: -35px;
+}
+.page-nav-btns i{
+	cursor: pointer; 
+	margin-left: 5px;
+}
+
+.pagination ul>li>a, .pagination ul>li>span {
+	float: left;
+	padding: 9px 12px;
+}

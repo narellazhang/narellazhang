@@ -1,0 +1,196 @@
+/*重用变量或类*/
+
+@import (less) "common.less";
+
+
+/*中间主体*/
+/*顶上的通知*/
+
+.notice{
+	overflow: hidden;
+	height: 36px;
+	border: 1px solid #d2dff6;
+	border-right: none;
+	.bottom-left-radius;
+	.top-left-radius;
+	background-color: #f2f8ff;
+	p{
+		margin-left: 22px;
+		font-size: 14px;
+		line-height: 35px;
+	}
+}
+.content{margin-bottom: 100px;}
+.tabbable{
+	margin-top:12px;
+	height: 450px;	
+	overflow: hidden;
+	border: 1px solid #d2dff6;
+	background-color: #f2f8ff;
+	border-right: none;
+	.bottom-left-radius;
+	.top-left-radius;
+	.nav-tabs{
+		li{
+			width: 125px;
+			font-size: 15px;
+		}
+		>li{
+			>a{
+					line-height: 29px;
+					padding: 8px 24px;
+				}
+			}
+	}
+	.tab-content{
+		height: 400px;
+		margin-top: -20px;
+		
+		border-top: none;
+		.bottom-left-radius;
+		.bottom-right-radius;
+		background-color:#fff;
+		overflow: hidden;
+		table{/*主体标签页导航*/
+			width: 100%;
+			font-size: 14px;
+		}
+	}
+}
+
+
+/*页面中的按钮*/
+.panel-ft{
+	float: right;
+	margin-right: 35px;
+	.btn{
+		margin-left: 20px;
+	}
+}
+
+
+/*页面中的物流信息等小表单的整体样式*/
+.info-sheet .span6:last-child{
+	margin:0 12px 0;
+}
+
+.panel{
+	margin-top: 12px;
+	height: 405px;
+	border: 1px solid #d2dff6;
+    .border-radius;
+	background: #fff;
+	font-size: 14px;
+	.panel-hd{
+		padding: 0 15px;
+		background-color:#f2f8ff;
+		border-bottom:1px solid #d2dff6;
+		.top-left-radius;    
+		.top-right-radius;
+         h3{
+			line-height: 44px;
+			font-size: 18px;
+			font-weight: normal;
+		}
+	}
+	.panel-bd{
+		h4{	
+			padding-left: 35px;
+			padding-top: 16px;
+		}
+		th{
+			text-align: center;
+			line-height: 34px;
+		}
+		td{
+			text-align: right;
+			padding-right: 50px;
+			&:first-child{
+				text-align: center;
+				padding-right: 8px;
+			}
+		}
+
+	}
+}
+
+/*物流信息*/
+.order-states{
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-left: 13px;
+	padding-bottom: 18px;
+	border-bottom:1px solid #eeeeee;
+	.row-fluid{
+		width: 520px;
+		margin: 0 auto;
+	}
+	.bg{
+		float: left;
+		width: 119px;
+		height: 120px;
+		margin-bottom: 10px;
+		background: url("./../images/circle.png") no-repeat;
+		float: left;
+		text-align: center;
+		p{
+			position: relative;
+			top:38px;
+		}
+		.state-data{
+			font-size: 20px;
+			font-family: "Arial";
+			color: #ff6600;
+			line-height: 20px;
+		}
+	}
+}
+.inquiry{
+	
+	margin: 0 auto;
+	margin-left: 35px;
+	margin-top: 14px;
+	
+	.input-prepend select{
+		width: 120px;
+		height: 30px;
+		border-right: none;
+		-webkit-border-radius: 4px 0 0 4px;
+     -webkit-font-smoothing: 4px 0 0 4px;     
+  	 border-radius: 4px 0 0 4px;
+			
+	}
+	.btn{
+		position: relative;
+		top:-5px;
+		margin-left: 6px;
+	}
+	.inputSKU{
+		width: 250px;
+	}
+	
+}
+
+
+/*库存信息&退货模块*/
+.divide-line{
+	display: block;
+	width: 90%;
+	height: 1px;
+	margin: 0 auto;
+	border-top: 1px dashed #d2dff6;
+}
+.bottom-btn{
+	margin-top: 20px;
+}
+
+/*库存信息&财务信息的表单控制*/
+.stock,.finance{
+	td:first-child{
+		width: 30%;
+	}
+}
+.stock .panel-bd td{padding-right: 80px;}
+
+.finance .panel-bd td{padding-right: 60px;}
