@@ -20,17 +20,17 @@
 .logo{
   background: url(./../images/icon.png) -0px -50px;
   width: 128px;
-   height: 42px;
-   position: absolute;
+  height: 42px;
+  position: relative;
   top: 40px;
-  left: 250px;
+  left: 50px;
 }
 .title h1{
   font-size: 36px;
   position: relative;
 
-  top: 75px;
-  left: 200px;
+  top: 35px;
+  left: 178px;
   color: #30180b;
 
   text-shadow: 
