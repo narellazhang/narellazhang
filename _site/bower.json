@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "authors": [
+    "narella"
+  ],
+  "description": "narella blog",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~2.1.1",   
+    "jquery": "1.11.0",
+    "jquery-ui": "1.11.0",   
+    "html5shiv": "~3.7.0",
+     "ie7-js": "*",
+     "modernizr":"2.8.3",
+     "pie":"1.0.0"
+  }
+}
