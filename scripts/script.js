@@ -1,10 +1,16 @@
 ﻿(function($){
 	// Settings
-	var repeat = localStorage.repeat || 0,
-		shuffle = localStorage.shuffle || 'false',
-		continous = true,
-		autoplay = true,
-		playlist = [
+	var repeat = 0;
+	var shuffle = false;
+	if(!window.ActiveXObject){
+		repeat = localStorage.repeat || 0;
+		shuffle = localStorage.shuffle || 'false';
+	}
+	
+		
+		var continous = true;
+		var autoplay = true;
+		var playlist = [
 		{
 title: 'If I Were A Boy',
 artist: 'Beyonce',
@@ -135,7 +141,10 @@ ogg: './music/Secret Garden.mp3'
 		$('.volume .slider a').css('left', value * 100 + '%');
 	}
 
-	var volume = localStorage.volume || 0.5;
+	var volume = 0.5;
+	if(!window.ActiveXObject){
+		volume = localStorage.volume || 0.5;
+	}
 	$('.volume .slider').slider({max: 1, min: 0, step: 0.01, value: volume, slide: function(event, ui){
 		setVolume(ui.value);
 		$(this).addClass('enable');
