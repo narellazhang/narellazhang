@@ -17,7 +17,7 @@ artist: 'Beyonce',
 album: '',
 cover: './images/01.jpg',
 mp3: './music/song1.mp3',
-ogg: './music/song1.mp3'
+ogg: './music/song1.ogg'
 },
 {
 title: 'Yesterday Once More',
@@ -25,7 +25,7 @@ artist: 'Carpenters',
 album: '',
 cover: './images/02.jpg',
 mp3: './music/song2.mp3',
-ogg: './music/song2.mp3'
+ogg: './music/song2.ogg'
 },
 {
 title: 'Everytime',
@@ -33,7 +33,7 @@ artist: '布兰妮',
 album: '',
 cover: './images/03.jpg',
 mp3: './music/Everytime.mp3',
-ogg: './music/Everytime.mp3'
+ogg: './music/Everytime.ogg'
 },
 {
 title: 'Forever In Love',
@@ -42,7 +42,7 @@ album: 'Kenny G Greatest Hits',
 album: '',
 cover: './images/02.jpg',
 mp3: './music/song3.mp3',
-ogg: './music/song3.mp3'
+ogg: './music/song3.ogg'
 },
 {
 title: '光阴的故事',
@@ -50,7 +50,7 @@ artist: '佟大为、邓超、黄晓明',
 album: '',
 cover: './images/02.jpg',
 mp3: './music/光阴的故事.mp3',
-ogg: './music/光阴的故事.mp3'
+ogg: './music/光阴的故事.ogg'
 },
 {
 title: '夏末的萨克斯手',
@@ -58,7 +58,7 @@ artist: '曹方',
 album: '比天空还远',
 cover: './images/03.jpg',
 mp3: './music/song5.mp3',
-ogg: './music/song5.mp3'
+ogg: './music/song5.ogg'
 },
 {
 title: '北京东路的日子',
@@ -66,7 +66,7 @@ artist: '群星',
 album: '曾经的歌系列 36',
 cover: './images/03.jpg',
 mp3: './music/song6.mp3',
-ogg: './music/song6.mp3'
+ogg: './music/song6.ogg'
 },
 {
 title: '我是认真的',
@@ -74,14 +74,14 @@ artist: '曹方',
 album: '',
 cover: './images/02.jpg',
 mp3: './music/我是认真的.mp3',
-ogg: './music/我是认真的.mp3'
+ogg: './music/我是认真的.ogg'
 },{
 title: 'A Song From Secret Graden',
 artist: 'Secret Graden',
 album: '',
 cover: './images/03.jpg',
 mp3: './music/Secret Garden.mp3',
-ogg: './music/Secret Garden.mp3'
+ogg: './music/Secret Garden.ogg'
 },];
 
 	// Load playlist

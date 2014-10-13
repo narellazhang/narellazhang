@@ -54,10 +54,8 @@ table {
 	}
 	.content{
 		width: 750px;
-	    margin: 0 auto;
-		position: relative;
-		top: 166px;
-		left: 15px;
+		margin-top: 165px;
+		margin-left: 140px;
 	}
 
 	/*other*/
@@ -71,6 +69,7 @@ table {
 	  width: 800px;
 	  margin: 0 auto;
 	  margin-top: 115px;
+
 	}
 
 
@@ -103,55 +102,56 @@ table {
 
 
 	.nav{
-		position: absolute;
-		top: 120px;
-		left: 880px;
-	}
-	.icon{
-		float: left;
-		background: url(./../images/icon-trans.png);
-		width: 50px;
-		height: 50px;
-		margin-left: 10px;
-	 
-	}
-	li.home{
-		background-position: -150px -0px;
-	}
-	li.home:hover{
-		
-	  background-position: -100px -0px;
-	}
-	li.home_active{
-	  background-position: -100px -0px;
-	}
-	li.contact{
-		background-position: -50px -0px;
-	}
-	li.contact:hover{
-		background-position: -0px -0px;
-	}
-	li.contact_active{
-	  background-position: -0px -0px;
-	}
-	li.music{
-		background-position: -250px -0px;
-	}
-	li.music:hover{
-		background-position: -200px -0px;
-	}
-	li.music_active{
-	  background-position: -200px -0px;
-	}
-	li.note{
-		background-position: -350px -0px; 
-	}
-	li.note:hover{
-		background-position: -300px -0px;
-	}
-	li.note_active{
-	  background-position: -300px -0px;
-	}
+		position: relative;
+		top: 50px;
+		left: 700px;
+		}
+		.icon{
+			float: left;
+			background: url(./../images/icon-trans.png);
+			width: 50px;
+			height: 50px;
+			margin-left: 10px;
+
+		 
+		}
+		li.home{
+			background-position: -150px -0px;
+		}
+		li.home:hover{
+			
+		  background-position: -100px -0px;
+		}
+		li.home_active{
+		  background-position: -100px -0px;
+		}
+		li.contact{
+			background-position: -50px -0px;
+		}
+		li.contact:hover{
+			background-position: -0px -0px;
+		}
+		li.contact_active{
+		  background-position: -0px -0px;
+		}
+		li.music{
+			background-position: -250px -0px;
+		}
+		li.music:hover{
+			background-position: -200px -0px;
+		}
+		li.music_active{
+		  background-position: -200px -0px;
+		}
+		li.note{
+			background-position: -350px -0px; 
+		}
+		li.note:hover{
+			background-position: -300px -0px;
+		}
+		li.note_active{
+		  background-position: -300px -0px;
+		}
 
 	.nav li a{
 	  
