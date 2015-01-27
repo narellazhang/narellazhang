@@ -59,7 +59,7 @@ nodejs 默认安装在 C:\Program Files\nodejs ，如果是 64 位的系统，�
  * 1.官网下载地址：http://developer.android.com/sdk/installing/index.html
  * 2.安装教程可参考：http://www.androidcentral.com/installing-android-sdk-windows-mac-and-linux-tutorial
 
-如果你对于2013年Google I/O 大会首次发布了Android Studio IDE（Android平台集成开发环境）无感，你可以在下面的地址下载
+如果你对于2013年Google I/O 大会首次发布了Android Studio IDE（Android平台集成开发环境）无感，你可以在下面的地址下载<br>
 http://www.cnblogs.com/bjzhanghao/archive/2012/11/14/android-platform-sdk-download-mirror.html
 ![adt](Image3.png)
 解压即可用，把环境路径配上就好。<br>
