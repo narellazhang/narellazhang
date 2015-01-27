@@ -12,7 +12,7 @@
 
 ###安装node.js
  * 1.下载地址:http://nodejs.org/download/<br>
-以windows，下载msi版本为例，
+以windows，下载msi版本为例<br>
 ![download](Image.png)
  * 2.安装,双击运行，即可在程序的引导下完成安装。
  * 3.测试安装结果命令(git bash或cmd):<br>
