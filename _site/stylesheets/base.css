@@ -1,0 +1,171 @@
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* 各个页面重用的类*/
+  .wrap{
+		background: url(./../images/bg.jpg) repeat;
+		width: 100%;
+		
+    }
+
+    /*home*/
+	.home_page{
+		background: url(./../images/grey++.png) no-repeat 40px 160px;
+		width: 1002px;
+		height: 736px;
+		margin: 0 auto;
+	}
+	.content{
+		width: 750px;
+	    margin: 0 auto;
+		position: relative;
+		top: 166px;
+		left: 15px;
+	}
+
+	/*other*/
+	.sub_page{
+	  background: url(./../images/grey_sub.png) no-repeat 40px 160px;
+	  width: 1002px;
+	  height: 800px;
+	  margin: 0 auto;
+	}
+	.container{
+	  width: 800px;
+	  margin: 0 auto;
+	  margin-top: 115px;
+	}
+
+
+   /*all pages*/
+	.logo{
+	  background: url(./../images/icon-trans.png) -0px -50px;
+	  width: 128px;
+	  height: 42px;
+	  position: relative;
+	  top: 40px;
+	  left: 50px;
+	}
+	.title h1{
+	  font-size: 36px;
+	  position: relative;
+	  top: 35px;
+	  left: 178px;
+	  color: #30180b;
+	  text-shadow: 
+	    1px 0 0 #e5ab74, 0 1px 0 #e5ab74, 
+	    0 -1px 0 #e5ab74, -1px 0 0 #e5ab74, 
+	    1px 0 1px #e5ab74, 0 1px 1px #e5ab74, 
+	    0 -1px 1px #e5ab74, -1px 0 1px #e5ab74;
+	    filter: 
+	    Dropshadow(offx = 1, offy = 0, color = #e5ab74) 
+	    Dropshadow(offx = 0, offy = 1, color = #e5ab74) 
+	    Dropshadow(offx = 0, offy = -1, color = #e5ab74) 
+	    Dropshadow(offx = -1, offy = 0, color = #e5ab74);
+	}
+
+
+	.nav{
+		position: absolute;
+		top: 120px;
+		left: 880px;
+	}
+	.icon{
+		float: left;
+		background: url(./../images/icon-trans.png);
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+	 
+	}
+	li.home{
+		background-position: -150px -0px;
+	}
+	li.home:hover{
+		
+	  background-position: -100px -0px;
+	}
+	li.home_active{
+	  background-position: -100px -0px;
+	}
+	li.contact{
+		background-position: -50px -0px;
+	}
+	li.contact:hover{
+		background-position: -0px -0px;
+	}
+	li.contact_active{
+	  background-position: -0px -0px;
+	}
+	li.music{
+		background-position: -250px -0px;
+	}
+	li.music:hover{
+		background-position: -200px -0px;
+	}
+	li.music_active{
+	  background-position: -200px -0px;
+	}
+	li.note{
+		background-position: -350px -0px; 
+	}
+	li.note:hover{
+		background-position: -300px -0px;
+	}
+	li.note_active{
+	  background-position: -300px -0px;
+	}
+
+	.nav li a{
+	  
+	  display: block;
+	  width: 50px;
+	  height: 50px;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  word-wrap: normal;
+	}
+
+	.nav li a span{
+		position: relative;
+		z-index: -1;
+		zoom: 1;
+		overflow: hidden;
+	}

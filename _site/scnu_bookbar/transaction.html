@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8" /> 
+<title>SCNU_BookBar 华师书吧 书籍交易</title> 
+
+<script src="scripts/BaiduTemplate.js"></script> 
+<link rel="stylesheet" media-"screen" href="styles/layout.css" />
+
+
+
+</head> 
+<body > 
+	<div id="body">
+		<img src="images/background.png" />
+	</div>
+	<div id="bodyhead">
+		 <img src="images/transparent.gif" class="headsprite scnu"/>
+		 <input type="text" name="search" />
+		 <a href="#">搜索</a>
+		 <a href="login.html">登录</a>
+		 <a href="register.html">注册</a>
+		 <img src="images/transparent.gif" class="headsprite logo"/>
+	</div>	 
+	<img src="images/transparent.gif" class="headsprite bookbar" />
+	
+	<div id="mainnav"> 	
+		<a href="index.html" /><img src="images/transparent.gif" class="sprite homemini" alt="home" /></a>
+		<a href="transaction.html"  /><img src="images/transparent.gif" class="sprite bookhere" alt="transaction" /></a>
+		<a href="read.html" ><img src="images/transparent.gif" class="sprite shujianmini" alt="read" /></a>
+		<a href="recommended.html" ><img src="images/transparent.gif" class="sprite haoshumini" alt="recommended" /></a>
+	</div>
+	
+	<div id="content">
+	<form  id="fenlei" >
+	<p class="trade_p">分类：</p><br />
+	<input type="checkbox" name="public" value="cs" />计算机类
+	<input type="checkbox" name="public" value="math"  />高等数学
+	<input type="checkbox" name="public" value="en" />大学英语
+	<input type="checkbox" name="public" value="publicbx" />公共必修(思修等)
+	<input type="checkbox" name="public" value="publicxx" />公选课本
+	<input type="checkbox" name="public" value="history" />历史
+	<input type="checkbox" name="public" value="zhenzhi" />政治 
+	<input type="checkbox" name="public" value="biology" />生科
+	</form>
+	<p class="trade_p">按书名查询：</p>
+	<input type="text" name="bookname" value=""></input>
+	<p class="trade_p">排序：</p>
+	<input type="button" name="jiage" class="trade_p" value="价格 ↓ "></input>
+	<input type="button" name="xinjiu"  class="trade_p" value="新旧程度 ↑ "></input>
+	<div id="sort">
+		<script id="resultdata" type="text/html">
+			 <div>
+				<%if(img.length>1) { %>
+					<ul>
+						<%for(var i=0;i<img.length;i++){%>
+							<img class="touxiang" src="<%=img[i]%>" />
+							<img class="shu" src="<%=imga[i]%>"  />
+							<h4><%=bookname[i]%></h4>
+							<p class="jianjie"><%=miaoshu[i]%></p>
+							<p class="pinglun highlight"><%=jiage[i]%></p>
+						<%}%>
+					</ul>
+				<%}else{%>
+					<h2>没有list数据</h2>   
+				<%}%>
+			</div>  
+		</script>
+
+		<script type="text/javascript">
+		var data={
+			"img":['images/person1.gif','images/person2.gif'],
+			"imga":['images/book.png','images/book.png'],
+			"bookname":['马克思主义','马克思主义'],
+			"miaoshu":[
+				'新旧程度：四星',
+				'新旧程度：五星'
+			],
+			"jiage":[
+			'4元',
+			'5元'
+			]
+		};
+		var bt=baidu.template;
+
+		var html=bt('resultdata',data);
+
+		document.getElementById('sort').innerHTML=html;
+		</script>
+
+	</div>
+
+	</div>
+	<table id="userprofile">
+	<thead>
+	<tr>
+	<td><img src="images/person.png" /></td>
+	<td><a href="perfect.html">NarellaChang</a><p >634069612@qq.com</p></td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="2"><a href="#">书籍交易数：5本</a></td></tr>
+	<tr><td colspan="2"><a href="#">家有藏书数：6本</a></td></tr>
+	<tr><td colspan="2"><a href="#">寻书之旅数：5本</a></td></tr>
+	<tr><td colspan="2"><a href="#">好书推荐书：3本</a></td></tr>
+	</tbody>
+	</table>
+	<div id="footer">
+		<p>版权信息</p>
+	</div>
+   
+
+</body> 
+<script src="scripts/jquery.js"></script>
+<script src="scripts/staticNav.js"></script>
+
+</html> 
